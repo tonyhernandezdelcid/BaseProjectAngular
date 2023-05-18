@@ -1,0 +1,47 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<div class="superior">
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary "  >
+    <a class="navbar-nav titulos" style="font-size: 20px; " >Proyecto Base</a>
+    <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li>
+            &nbsp;
+            &nbsp;
+
+        </li>
+
+
+      </ul>
+      <ul class="navbar-nav">
+
+        <li>
+            <a class="nav-link" style="cursor:pointer;" (click)="cerrarSesion()">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!--
+<div  style=" height: 30px; width: 100%;margin-top: 50px;background-color: rgb(199, 199, 199);">
+  <div style="float: right;margin-right: 30px;">
+    <p class="nav-link">Bienvenido  {{minombre}} {{miapellido}}</p>
+  </div>
+</div> -->
+
+
