@@ -13,7 +13,7 @@ export class ServicioApiService {
 
 
   consultarUsuarios() {
-    let b = this.http.get('http://localhost:8080/baseprojectapi/consultausuarios');
+    let b = this.http.get('http://192.168.14.113:8080/baseprojectapi/consultausuarios');
     console.log(b)
     return b;
   }
