@@ -17,4 +17,9 @@ export class ServicioApiService {
     console.log(b)
     return b;
   }
+
+
+  consultarEmpresa(){
+    return this.http.get('http://localhost:8080/baseprojectapi/consultaEmpresa')
+  }
 }

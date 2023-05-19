@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 import { FormsModule } from '@angular/forms';
@@ -64,8 +64,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSlideToggleModule,
     MatSelectModule,
     MatDialogModule,
-    NgbModule
-
+    NgbModule,
+    MatPaginatorModule
 
 
   ],
