@@ -30,6 +30,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UsuariosMantAddComponent } from './usuarios-mant-add/usuarios-mant-add.component';
+import { DialogoConfirmacionComponent } from './dialogo-confirmacion/dialogo-confirmacion.component';
+import { DialogoErrorComponent } from './dialogo-error/dialogo-error.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UsuariosMantHomeComponent,
     InicioComponent,
     Navbar2Component,
-    NavbarComponent
+    NavbarComponent,
+    UsuariosMantAddComponent,
+    DialogoConfirmacionComponent,
+    DialogoErrorComponent
   ],
   imports: [
     BrowserModule,

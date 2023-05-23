@@ -18,8 +18,8 @@ export class ServicioApiService {
     return b;
   }
 
-
-  consultarEmpresa(){
-    return this.http.get('http://localhost:8080/baseprojectapi/consultaEmpresa')
+  insertarUsuario(data: any){
+    return this.http.post('http://localhost:8080/baseprojectapi/crearusuario', data, { responseType: 'text'}).toPromise();
   }
+
 }

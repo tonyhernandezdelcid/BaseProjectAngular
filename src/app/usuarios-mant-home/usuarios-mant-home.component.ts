@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialog } from '@angular/material/dialog';
 import { ServicioApiService } from '../servicio-api.service';
+import { UsuariosMantAddComponent } from '../usuarios-mant-add/usuarios-mant-add.component';
 
 export interface Usuario {
   codigo: string;
@@ -88,5 +89,18 @@ export class UsuariosMantHomeComponent implements OnInit, AfterViewInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+
+
+
+
+  abrirDialogo(){
+    const dialogRef = this.dialog.open(UsuariosMantAddComponent, {
+      data: {
+        dataKey: 'Agregar usuario',
+      },
+      disableClose: true,
+    });
+  }
+
 
 }
