@@ -6,6 +6,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialog } from '@angular/material/dialog';
 import { ServicioApiService } from '../servicio-api.service';
 import { UsuariosMantAddComponent } from '../usuarios-mant-add/usuarios-mant-add.component';
+import { DialogoConfirmarEliminarComponent } from '../dialogo-confirmar-eliminar/dialogo-confirmar-eliminar.component';
 
 export interface Usuario {
   codigo: string;
@@ -102,5 +103,20 @@ export class UsuariosMantHomeComponent implements OnInit, AfterViewInit {
     });
   }
 
+
+  eliminar(row: any){
+
+    sessionStorage.setItem('pagina', 'US');
+    let misesion = window.sessionStorage.getItem('pagina');
+
+    const dialogRef = this.dialog.open(DialogoConfirmarEliminarComponent, {
+      data: {
+        dataKey: '¿Desea eliminar el registro?', row, misesion
+      },
+      disableClose: true,
+    });
+
+
+  }
 
 }

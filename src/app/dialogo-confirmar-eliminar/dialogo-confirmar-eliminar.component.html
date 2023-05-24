@@ -1,0 +1,26 @@
+<form>
+  <div class="screenAlert-icon screenAlert-error animate">
+    <span class="screenAlert-x-mark">
+      <span class="screenAlert-line screenAlert-left animateXLeft"></span>
+      <span class="screenAlert-line screenAlert-right animateXRight"></span>
+    </span>
+    <div class="screenAlert-placeholder"></div>
+    <div class="screenAlert-fix"></div>
+  </div>
+
+  <div style="margin-top: 10px">
+    <label>{{ mensaje }}</label>
+  </div>
+
+    <div style="display: inline-block; margin-right: 10px;">
+      <button (click)="eliminarObjeto()" type="button" class="btn btn-danger">
+        Aceptar
+      </button>
+    </div>
+
+    <div style="display: inline-block;">
+      <button (click)="recargar()" type="button" class="btn btn-danger">
+        Cancelar
+      </button>
+    </div>
+</form>

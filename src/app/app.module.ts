@@ -33,6 +33,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UsuariosMantAddComponent } from './usuarios-mant-add/usuarios-mant-add.component';
 import { DialogoConfirmacionComponent } from './dialogo-confirmacion/dialogo-confirmacion.component';
 import { DialogoErrorComponent } from './dialogo-error/dialogo-error.component';
+import { DialogoConfirmarEliminarComponent } from './dialogo-confirmar-eliminar/dialogo-confirmar-eliminar.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DialogoErrorComponent } from './dialogo-error/dialogo-error.component';
     NavbarComponent,
     UsuariosMantAddComponent,
     DialogoConfirmacionComponent,
-    DialogoErrorComponent
+    DialogoErrorComponent,
+    DialogoConfirmarEliminarComponent
   ],
   imports: [
     BrowserModule,

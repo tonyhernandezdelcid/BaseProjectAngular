@@ -22,4 +22,9 @@ export class ServicioApiService {
     return this.http.post('http://localhost:8080/baseprojectapi/crearusuario', data, { responseType: 'text'}).toPromise();
   }
 
+
+  eliminarUsuario(data: string){
+    return this.http.delete('http://localhost:8080/baseprojectapi/eliminausuario/'+data, { responseType: 'text'}).toPromise();
+  }
+
 }

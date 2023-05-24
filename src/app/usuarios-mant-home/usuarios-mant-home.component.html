@@ -69,7 +69,7 @@
 
 
                   <td mat-cell *matCellDef="let element">
-                      <button  class="btnDelete">
+                      <button (click)="eliminar(element)" class="btnDelete">
                           <mat-icon>cancel</mat-icon>
                       </button>
 
