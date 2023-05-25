@@ -55,7 +55,7 @@
 
 
                   <td mat-cell *matCellDef="let element">
-                      <button  class="btnEdit">
+                      <button  (click)="openDialogEdit(element)" class="btnEdit">
                           <mat-icon>edit</mat-icon>
                       </button>
                   </td>

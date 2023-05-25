@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ServicioApiService } from '../servicio-api.service';
 import { UsuariosMantAddComponent } from '../usuarios-mant-add/usuarios-mant-add.component';
 import { DialogoConfirmarEliminarComponent } from '../dialogo-confirmar-eliminar/dialogo-confirmar-eliminar.component';
+import { UsuariosMantEditComponent } from '../usuarios-mant-edit/usuarios-mant-edit.component';
 
 export interface Usuario {
   codigo: string;
@@ -117,6 +118,16 @@ export class UsuariosMantHomeComponent implements OnInit, AfterViewInit {
     });
 
 
+  }
+
+
+
+  openDialogEdit(row: any){
+    const dialogRef = this.dialog.open(UsuariosMantEditComponent, {
+      data: {
+        dataKey: row
+      },
+    });
   }
 
 }

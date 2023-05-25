@@ -5,13 +5,8 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { DialogoConfirmacionComponent } from '../dialogo-confirmacion/dialogo-confirmacion.component';
 import { DialogoErrorComponent } from '../dialogo-error/dialogo-error.component';
 
-export interface Usuario {
-  codigo: string;
-  nombre: string;
-  telefono: string;
-}
 
-const milista: Usuario[] = [];
+
 
 
 
@@ -30,7 +25,7 @@ const milista: Usuario[] = [];
 })
 export class UsuariosMantAddComponent implements OnInit {
 
-  tulista = milista;
+
   codigo: string = '';
   nombre: string = '';
   telefono: string = '';
@@ -40,7 +35,6 @@ export class UsuariosMantAddComponent implements OnInit {
     public dialog: MatDialog,
     private dialgoRef: MatDialogRef<any>){
 
-      this.tulista = []
 
     }
 

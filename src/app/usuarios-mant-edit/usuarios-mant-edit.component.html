@@ -1,0 +1,75 @@
+<div>
+  <div style="text-align: center">
+    <h1 class="titulo">Editar usuario</h1>
+    <hr />
+  </div>
+
+  <form>
+    <div style="text-align: right;" >
+
+      <div style="display: inline-block; margin-right: 10px; ">
+        <button (click)="editar()" mat-flat-button color="primary">
+          Guardar
+        </button>
+      </div>
+
+      <div style="display: inline-block;">
+        <button (click)="cerrar()" mat-flat-button color="warn">
+          Cancelar
+        </button>
+      </div>
+
+    </div>
+
+      <div style="margin-left: 10px; display: inline-block; margin-top: 20px">
+        <label class="label">Codigo:</label>
+        <mat-form-field style="margin-left: 10px" class="example-full-width">
+          <mat-label>Codigo</mat-label>
+          <input
+            maxlength="10"
+            name="codigo"
+            [(ngModel)]="codigo"
+            matInput
+            placeholder="Ex. 1"
+            readonly="true"
+          />
+        </mat-form-field>
+      </div>
+
+
+
+      <p></p>
+
+
+
+      <div style="margin-left: 10px; display:  inline-block;">
+        <label class="label">Nombre:</label>
+        <mat-form-field style="margin-left: 10px" class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <input
+            name="nombre"
+            [(ngModel)]="nombre"
+            matInput
+            placeholder="Ex. Sebastian Carrillo"
+          />
+        </mat-form-field>
+      </div>
+
+      <p></p>
+
+      <div style="margin-left: 10px; display:  inline-block;">
+        <label class="label">Telefono:</label>
+        <mat-form-field style="margin-left: 10px" class="example-full-width">
+          <mat-label>Telefono</mat-label>
+          <input
+            name="telefono"
+            [(ngModel)]="telefono"
+            matInput
+            placeholder="Ex. Sebastian Carrillo"
+          />
+        </mat-form-field>
+      </div>
+
+
+  </form>
+</div>

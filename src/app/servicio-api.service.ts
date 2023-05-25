@@ -27,4 +27,9 @@ export class ServicioApiService {
     return this.http.delete('http://localhost:8080/baseprojectapi/eliminausuario/'+data, { responseType: 'text'}).toPromise();
   }
 
+
+  editarUsuario(data: any){
+    return this.http.put('http://localhost:8080/baseprojectapi/modificarusuario', data, { responseType: 'text'}).toPromise();
+  }
+
 }
