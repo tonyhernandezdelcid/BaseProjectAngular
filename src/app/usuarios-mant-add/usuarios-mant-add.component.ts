@@ -65,7 +65,7 @@ export class UsuariosMantAddComponent implements OnInit {
 
           const dialogRef = this.dialog.open(DialogoConfirmacionComponent, {
             data: {
-              dataKey: 'El registro se ha agregado con exito',
+              dataKey: 'El registro se ha agregado con éxito',
             },
             disableClose: true,
           });
@@ -76,7 +76,7 @@ export class UsuariosMantAddComponent implements OnInit {
 
             const dialogRef = this.dialog.open(DialogoErrorComponent, {
               data: {
-                dataKey: 'El telefono no puede ir vacìo',
+                dataKey: 'El teléfono no puede ir vacìo',
               },
               disableClose: true,
             });
@@ -99,7 +99,7 @@ export class UsuariosMantAddComponent implements OnInit {
 
         const dialogRef = this.dialog.open(DialogoErrorComponent, {
           data: {
-            dataKey: 'El codigo no puede ir vacìo',
+            dataKey: 'El código no puede ir vacìo',
           },
           disableClose: true,
         });
