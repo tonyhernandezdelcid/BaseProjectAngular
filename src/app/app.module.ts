@@ -35,6 +35,7 @@ import { DialogoConfirmacionComponent } from './dialogo-confirmacion/dialogo-con
 import { DialogoErrorComponent } from './dialogo-error/dialogo-error.component';
 import { DialogoConfirmarEliminarComponent } from './dialogo-confirmar-eliminar/dialogo-confirmar-eliminar.component';
 import { UsuariosMantEditComponent } from './usuarios-mant-edit/usuarios-mant-edit.component';
+import { UsuariosMantViewComponent } from './usuarios-mant-view/usuarios-mant-view.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { UsuariosMantEditComponent } from './usuarios-mant-edit/usuarios-mant-ed
     DialogoConfirmacionComponent,
     DialogoErrorComponent,
     DialogoConfirmarEliminarComponent,
-    UsuariosMantEditComponent
+    UsuariosMantEditComponent,
+    UsuariosMantViewComponent
   ],
   imports: [
     BrowserModule,

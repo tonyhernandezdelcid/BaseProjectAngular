@@ -8,6 +8,7 @@ import { ServicioApiService } from '../servicio-api.service';
 import { UsuariosMantAddComponent } from '../usuarios-mant-add/usuarios-mant-add.component';
 import { DialogoConfirmarEliminarComponent } from '../dialogo-confirmar-eliminar/dialogo-confirmar-eliminar.component';
 import { UsuariosMantEditComponent } from '../usuarios-mant-edit/usuarios-mant-edit.component';
+import { UsuariosMantViewComponent } from '../usuarios-mant-view/usuarios-mant-view.component';
 
 export interface Usuario {
   codigo: string;
@@ -67,6 +68,7 @@ export class UsuariosMantHomeComponent implements OnInit, AfterViewInit {
     'nombre',
     'telefono',
     'editar',
+    'visualizar',
     'eliminar',
 
   ];
@@ -124,6 +126,15 @@ export class UsuariosMantHomeComponent implements OnInit, AfterViewInit {
 
   openDialogEdit(row: any){
     const dialogRef = this.dialog.open(UsuariosMantEditComponent, {
+      data: {
+        dataKey: row
+      },
+    });
+  }
+
+
+  openDialogView(row: any){
+    const dialogRef = this.dialog.open(UsuariosMantViewComponent, {
       data: {
         dataKey: row
       },
